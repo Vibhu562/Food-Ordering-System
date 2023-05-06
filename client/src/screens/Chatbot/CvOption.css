@@ -1,0 +1,24 @@
+.cv-options-container {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  
+  .cv-option-button {
+    padding: 0.5rem;
+    border-radius: 25px;
+    background: transparent;
+    border: 1px solid #ffc404;
+    font-weight: bold !important;
+
+    margin: 3px;
+    cursor: pointer;
+  }
+
+  .cv-option-button:focus, .cv-option-button:hover{
+    outline: none;
+    background-color: #ffc404;
+    font-weight: bold !important;
+
+    color: black;
+  }

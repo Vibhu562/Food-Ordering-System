@@ -1,0 +1,4 @@
+food_id,title,canteen_id,price,num_orders,category,avg_rating,num_rating,tags
+638b0f8116991f3ccbe05300,Mix veg,1,230,3,,5,3,good
+638b0f9216991f3ccbe05301,Plain Roti,1,20,3,,4.666666667,3,good
+639869515cfa3dace493dd14,Dal Makhni,1,250,0,,0,0,hhh

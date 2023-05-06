@@ -1,0 +1,26 @@
+  
+ 
+
+  input:invalid + #icon::after {
+    position: absolute;
+    content: "✖";
+    margin-top: 15px;
+    /* padding-left: 5px; */
+  }
+  
+  input:valid + #icon::after {
+    margin-top: 15px;
+    position: absolute;
+    content: "✓";
+    /* padding-left: 5px; */
+  }
+
+  .timeInput{
+    width: 90%;
+  }
+
+  .rowC{display:flex; flex-direction:row;}
+
+  input[type="time"] {
+    width: 700px;
+  }
