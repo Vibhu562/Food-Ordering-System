@@ -1,8 +1,4 @@
 restaurant,food_id,title,canteen_id,price,num_orders,category,avg_rating,num_rating,tags
-Tulsi,638b0f8116991f3ccbe05300,Mix veg,1,230,3,,5,8,good
-Tulsi,638b0f9216991f3ccbe05301,Plain Roti,1,20,3,,4.666666666666667,8,good
-Tulsi,639869515cfa3dace493dd14,Dal Makhni,1,250,9,,0,9,hhh
-Tulsi,639869515cfa3dace493dd14,Dal Makhni,1,250,10,,0,5,hhh
-Tulsi,638b0f9216991f3ccbe05301,Plain Roti,1,20,0,,4.666666666666667,3,good
-Tulsi,639869515cfa3dace493dd14,Dal Makhni,1,250,2,638b0f9216991f3ccbe05301,0,0,good
-Tulsi,639869515cfa3dace493dd14,Dal Makhni,1,250,2,,0,0,good
+
+Om sweets,638c67231d78214547509cac,Dal Makhni,1,50,5,,5,2,
+Tulsi,638b0f8116991f3ccbe05300,Mix veg,1,230,5,,5,2,

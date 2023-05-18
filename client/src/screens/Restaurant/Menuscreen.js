@@ -60,7 +60,7 @@ export default function Menuscreen() {
         <Link className='row  mb-2' to={`/restaurant/menu/${restaurant._id}/tablestatus`} style={{ textDecoration: 'none',color:"black" }}>
           <button className='btn btn-warning text-dark fw-bold'>Table Status</button>
         </Link>
-        <Link className='row  mb-2' to={`/csv`} style={{ textDecoration: 'none',color:"black" }}>
+        <Link className='row  mb-2' to={`/restaurant/${restaurant._id}/csv`} style={{ textDecoration: 'none',color:"black" }}>
           <button className='btn btn-warning text-dark fw-bold'>Recommendation</button>
         </Link>
         <div className='row'>

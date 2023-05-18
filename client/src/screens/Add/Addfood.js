@@ -150,7 +150,7 @@ export default function Addfood() {
             <input
               type="number"
               className="form-control mb-2 mr-sm-2"
-              placeholder="price (Platter price is added else original price is added)"
+              placeholder="Number of orders of particular item"
               value={0}
               required
               onChange={(e) => {

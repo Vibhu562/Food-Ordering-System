@@ -6,7 +6,7 @@ import numpy as np
 df1 = pd.read_csv('../../../../data.csv')
 df1.columns = ['Restaurant', 'food_id', 'title', 'canteen_id', 'price',
                'num_orders', 'category', 'avg_rating', 'num_rating', 'tags']
-print(df1)
+
 # mean of average ratings of all items
 C = df1['avg_rating'].mean()
 
@@ -43,7 +43,7 @@ df2 = pd.read_csv('./data.csv')
 # write DataFrame to JSON file
 top_rated_items[['Restaurant', 'title', 'num_rating', 'avg_rating', 'score']
                 ].to_json('data.json', orient='records')
-
+print("Data")
 # read JSON file and write as JavaScript file
 with open('data.json', 'r') as f:
     data = f.read()

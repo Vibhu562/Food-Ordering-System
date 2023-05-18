@@ -6,10 +6,10 @@ import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 
 function Extra() {
-  const [num_orders, setnum_orders] = useState("");
+  //const [num_orders, setnum_orders] = useState("");
   const [category, setcategory] = useState("");
   const [avg_rating, setavg_rating] = useState("");
-  const [num_rating, setnum_rating] = useState("");
+ // const [num_rating, setnum_rating] = useState("");
   const [tags, settags] = useState("");
 
   const handleSubmit = async (event) => {
@@ -99,12 +99,12 @@ function Extra() {
         </Form.Label>
         <Form.Control
           className="w-25 mt-1"
-          type="text"
+          type="number"
           id="num_orders"
           value={food.num_orders}
         />
       </Form.Group>
-      <Form.Group className="mb-2" controlId="formBasicEmail">
+     {/* <Form.Group className="mb-2" controlId="formBasicEmail">
         <Form.Label className="mb-0" htmlFor="category">
           Category of food items:
         </Form.Label>
@@ -115,7 +115,7 @@ function Extra() {
           value={category}
           onChange={(event) => setcategory(event.target.value)}
         />
-      </Form.Group>
+  </Form.Group> */}
       <Form.Group className="mb-2" controlId="formBasicEmail">
         <Form.Label className="mb-0" htmlFor="avg_rating">
           Avg Rating of Food Items:
@@ -125,11 +125,11 @@ function Extra() {
           type="text"
           id="avg_rating"
           value={food.rating}
-          onChange={(event) => setavg_rating(event.target.value)}
+       //   onChange={(event) => setavg_rating(event.target.value)}
         />
       </Form.Group>
 
-      <Form.Group className="mb-2" controlId="formBasicEmail">
+    {/*  <Form.Group className="mb-2" controlId="formBasicEmail">
         <Form.Label className="mb-0" htmlFor="tags">
           Tags of food items:
         </Form.Label>
@@ -140,7 +140,7 @@ function Extra() {
           value={tags}
           onChange={(event) => settags(event.target.value)}
         />
-      </Form.Group>
+</Form.Group>*/}
       <Button className="btn btn-dark" type="submit">
         Submit
       </Button>

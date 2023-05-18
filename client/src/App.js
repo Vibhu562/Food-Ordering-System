@@ -78,7 +78,7 @@ function App() {
           <Route path="/login" element={<Loginscreen />} />
           <Route path="/orders" element={<Ordersscreens />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/csv" element={<Csv />} />
+          <Route path="/restaurant/:id/csv" element={<Csv />} />
           <Route
             path="/restaurant/menu/:id/tablestatus"
             element={<Tablestatus />}
