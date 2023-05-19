@@ -6,7 +6,7 @@ import Loader from '../../components/others/Loader'
 import Error from '../../components/others/Error'
 import Success from '../../components/others/Success'
 import { useParams } from "react-router-dom";
-export default function Orderinfo({ match }) {
+export default function Orderinfo() {
   const dispatch = useDispatch();
   const orderstate = useSelector((state) => state.getOrderByIdReducer);
   let { id } = useParams();
@@ -40,11 +40,8 @@ export default function Orderinfo({ match }) {
                     <h1>{item.name}</h1>
                     <h1>
                       Quantity : <b>{item.quantity}</b>
-                    </h1>
-                   
-               
+                    </h1>           
                     <hr />
-                   
                   </div>
                 );
               })}

@@ -17,12 +17,15 @@ export default function Foodss({ food }) {
  //countinstock
  const [name, setname] = useState("");
  const [countInStock, setcountInStock] = useState();
+ const[num_orders,setnum_orders]= useState();
+
 
  useEffect(() => {
   if (food) {
     if (food._id == food._id) {
       setname(food.name);
       setcountInStock(food.countInStock);
+      setnum_orders(food.num_orders);
     } else {
       dispatch(getFoodById(food._id));
     }
@@ -35,6 +38,7 @@ function editfood(e) {
   const updatedfood = {
     name: name,
     countInStock:countInStock-1,
+    num_orders:num_orders+1,
   };
   dispatch(updateFood(food._id, updatedfood));
  
@@ -44,6 +48,7 @@ function editfoods(e) {
   const updatedfood = {
     name: name,
     countInStock: countInStock ,
+    num_orders:num_orders-1,
   };
   dispatch(updateFood(food._id, updatedfood));
 }

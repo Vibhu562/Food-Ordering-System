@@ -32,6 +32,7 @@ export default function Food({ food }) {
       dispatch(getFoodById(food._id));
     }
   }, [dispatch, food._id]);
+  
   function editfood(e) {
     e.preventDefault();
     const updatedfood = {
