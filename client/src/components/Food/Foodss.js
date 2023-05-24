@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { addToCart ,deleteFromCart} from "../../actions/cartActions";
 import { Link } from "react-router-dom";
-import Rating from "react-rating";
 
 import { deleteFood ,getFoodById , updateFood} from "../../actions/foodAction";
 

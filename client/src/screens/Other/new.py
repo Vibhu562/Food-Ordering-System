@@ -43,7 +43,6 @@ df2 = pd.read_csv('./data.csv')
 # write DataFrame to JSON file
 top_rated_items[['Restaurant', 'title', 'num_rating', 'avg_rating', 'score']
                 ].to_json('data.json', orient='records')
-print("Data")
 # read JSON file and write as JavaScript file
 with open('data.json', 'r') as f:
     data = f.read()

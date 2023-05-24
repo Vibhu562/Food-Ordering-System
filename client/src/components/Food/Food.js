@@ -38,7 +38,8 @@ export default function Food({ food }) {
     const updatedfood = {
       name: name,
       countInStock: countInStock - quantity,
-      num_orders : num_orders+1,
+      
+      num_orders : num_orders + Number(quantity),
     };
     dispatch(updateFood(food._id, updatedfood));
   }
@@ -47,7 +48,7 @@ export default function Food({ food }) {
     const updatedfood = {
       name: name,
       countInStock: countInStock,
-      num_orders:num_orders-1,
+      num_orders: num_orders,
     };
     dispatch(updateFood(food._id, updatedfood));
   }

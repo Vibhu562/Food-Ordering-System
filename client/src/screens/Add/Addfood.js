@@ -38,7 +38,7 @@ export default function Addfood() {
       vitamin: vitamin,
       calories:calories,
       countInStock: countInStock,
-      num_orders:num_orders,
+      num_orders:0,
       category: category,
       disease:disease,
       email : email,

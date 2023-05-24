@@ -1,4 +1,4 @@
 restaurant,food_id,title,canteen_id,price,num_orders,category,avg_rating,num_rating,tags
 
-Om sweets,638c67231d78214547509cac,Dal Makhni,1,50,5,,5,2,
-Tulsi,638b0f8116991f3ccbe05300,Mix veg,1,230,5,,5,2,
+Tulsi,646ddb3627cfd7ab63397a79,Dal makhni ,1,200,1,,5,1,
+Tulsi,646ddcfcfc48f9f867373671,Mix Veg,1,200,1,,5,1,

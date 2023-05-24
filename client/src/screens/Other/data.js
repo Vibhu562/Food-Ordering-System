@@ -1,2 +1,2 @@
-const data = [{"Restaurant":"Om sweets","title":"Dal Makhni","num_rating":2,"avg_rating":5,"score":5.0},{"Restaurant":"Tulsi","title":"Mix veg","num_rating":2,"avg_rating":5,"score":5.0}];
+const data = [{"Restaurant":"Tulsi","title":"Dal makhni ","num_rating":1,"avg_rating":5,"score":5.0},{"Restaurant":"Tulsi","title":"Mix Veg","num_rating":1,"avg_rating":5,"score":5.0}];
  export default data;
