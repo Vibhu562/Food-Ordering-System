@@ -45,6 +45,7 @@ export default function Orderlists() {
                         <th>Time</th>
                         <th>Transaction Id</th>
                         <th>Customer otp</th>
+                        <th>Customer uid or phonenumber</th>
                         <th>Order Cancelled</th>
                         <th>Payment Provide for order cancelling</th>
                         <th>Delete</th>
@@ -64,6 +65,7 @@ export default function Orderlists() {
                                 <td>{order.time}</td>
                                 <td>{order.transactionId}</td>
                                 <td>{order.otp}</td>
+                                <td>{order.uid}</td>
                                 <td>{order.cancel == true ? <i className='material-icons'>&#xe5c9;</i> : 
                                 <i className='material-icons'></i>}</td>
                                                       <td ><Link to={`/admin/editordersss/${order._id}`}><i className="fas fa-edit"></i></Link></td>

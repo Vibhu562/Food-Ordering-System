@@ -52,6 +52,7 @@ const orderSchema = mongoose.Schema({
     otp:{type:String,require},
     cancel:{type:Boolean,require},
     paymentlink:{type:String,require},
+    uid:{type:String,require},
 
 
 } , {

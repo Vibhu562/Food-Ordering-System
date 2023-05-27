@@ -50,6 +50,7 @@ export default function Orderli() {
                         <th>Time</th>
                         <th>Transaction Id</th>
                         <th>Customer otp</th>
+                        <th>Customer uid or phonenumber</th>
                         <th>Order Cancelled</th>
                        
                     </tr>
@@ -68,6 +69,7 @@ export default function Orderli() {
                                 <td>{order.time}</td>
                                 <td>{order.transactionId}</td>
                                 <td>{order.otp}</td>
+                                <td>{order.uid}</td>
                                 <td>{order.cancel == true ? <i className='material-icons'>&#xe5c9;</i> : 
                                 <i className='material-icons'></i>}</td>
                                 

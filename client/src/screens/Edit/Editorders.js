@@ -15,12 +15,14 @@ export default function Editorders() {
     const {success , updateerror , updateloading} = updateorderstate
     const dispatch = useDispatch();
     const [cancel, setcancels] = useState("");
+    const [uid,setuid] = useState("");
    
 
     useEffect(() => {
       if (order) {
         if (order._id == id) {
           setcancels(order.cancel);
+          setuid(order.uid);
         } else {
           dispatch(getOrderById(id));
         }
@@ -33,6 +35,7 @@ export default function Editorders() {
       e.preventDefault();
       const updatedorder = {
         cancel: cancel,
+        uid:uid,
       };
       dispatch(updatebyOrder(id, updatedorder));
      
@@ -59,7 +62,16 @@ export default function Editorders() {
                 setcancels(e.target.value);
               }}
             />
-
+              <input
+              type="text"
+              className="form-control mb-2 mr-sm-2"
+              placeholder="Provide paytm phone number or UPI ID with details"
+              required
+              value={uid}
+              onChange={(e) => {
+                setuid(e.target.value);
+              }}
+            />
             <button
               className="btn mt-5 mb-n2 btn-primary justify-content-center"
               type="submit"

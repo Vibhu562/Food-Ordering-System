@@ -52,6 +52,7 @@ router.post("/placeorder", async(req, res) => {
               otp:"",
               cancel:false,
               paymentlink:"",
+              uid:"",
         })
 
         order.save(err=>{
@@ -144,6 +145,7 @@ router.post("/updateorder", (req, res) => {
         deliveryboyname : req.body.updatedorder.deliveryboyname,
         deliveryboyphonenumber : req.body.updatedorder.deliveryboyphonenumber,
         paymentlink : req.body.updatedorder.paymentlink,
+    
 
     } , (err)=>{
         if(err){
@@ -159,6 +161,7 @@ router.post("/updatebyorder", (req, res) => {
         arrival : req.body.updatedorder.arrival,
        otp: req.body.updatedorder.otp,
        cancel : req.body.updatedorder.cancel,
+       uid:req.body.updatedorder.uid,
     } , (err)=>{
         if(err){
             return res.status(400).json({ message: 'Something went wrong'+err });
