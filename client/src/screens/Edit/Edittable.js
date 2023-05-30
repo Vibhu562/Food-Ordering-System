@@ -67,7 +67,7 @@ export default function Edittable() {
          <input
               type="text"
               className="form-control mb-2 mr-sm-2"
-              placeholder="name"
+              placeholder="Specify whether table is confirmed or not"
               required
               value={tableavailable}
               onChange={(e) => {

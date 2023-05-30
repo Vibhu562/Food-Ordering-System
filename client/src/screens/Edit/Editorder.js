@@ -85,7 +85,7 @@ export default function Editorder() {
           
               <input
               type="text"
-              required
+              
               className="form-control mb-2 mr-sm-2"
               placeholder="Arrival details"
               value={arrival}
@@ -105,7 +105,7 @@ export default function Editorder() {
             />
              <input
               type="text"
-              required
+              
               className="form-control mb-2 mr-sm-2"
               placeholder="Delivery Boy Name"
               value={deliveryboyname}
@@ -115,7 +115,7 @@ export default function Editorder() {
             />
             <input
               type="text"
-              required
+              
               className="form-control mb-2 mr-sm-2"
               placeholder="Delivery Boy Phone Number"
               value={deliveryboyphonenumber}

@@ -99,7 +99,7 @@ useEffect(() => {
              <input type = "text" placeholder='Name' className='form-control' value = {name} required onChange = {(e)=>{setname(e.target.value)}}  />
              <input type = "text" placeholder='email (same as login email only)' className='form-control' value = {email} required onChange = {(e)=>{setemail(e.target.value)}} />
              <input type = "number" placeholder='Phone Number' className='form-control' min = {0}   value = {phonenumber} required onChange = {(e)=>{setphonenumber(e.target.value)}}/>
-             <input type = "number" placeholder='Members Count' className='form-control' min = {0} max ={15} value = {members} required onChange = {(e)=>{setmembers(e.target.value)}}  />
+             <input type = "number" placeholder='Members Count' className='form-control' min = {0} max ={7} value = {members} required onChange = {(e)=>{setmembers(e.target.value)}}  />
              
              {/*<div className='rowC'>
              <input  type="time"  placeholder='Time for booking '  className='form-control timeInput '  min="12:00" max="21:00" value = {time} required onChange = {(e)=>{settime(e.target.value)}}  />

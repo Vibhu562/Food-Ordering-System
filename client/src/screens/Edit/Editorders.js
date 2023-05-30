@@ -77,7 +77,7 @@ export default function Editorders() {
               type="submit"
               style={{ float: "left" }}
             >
-              Update Order Status
+              Update Cancel Order Status
             </button>
           </form>
         </div>

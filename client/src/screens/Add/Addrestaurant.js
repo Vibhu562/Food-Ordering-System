@@ -55,7 +55,7 @@ export default function Addrestaurant() {
     dispatch(addRestaurant(restaurant));
   }
   function abc (){
-    window.location.href ='/admin'
+    window.location.href ='/login'
   }
   return (
     <div className="table-responsive-sm me-3 ms-2">

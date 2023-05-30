@@ -51,7 +51,7 @@ export default function Editordersss() {
             <input
               type="text"
               className="form-control mb-2 mr-sm-2"
-              placeholder="Enter Paytm success payment image link after payment"
+              placeholder="Enter Payment image link after successful payment"
               
               value={paymentlink}
               onChange={(e) => {
@@ -65,7 +65,7 @@ export default function Editordersss() {
               type="submit"
               style={{ float: "left" }}
             >
-              Update Order Status
+              Update Payment Order Status
             </button>
           </form>
         </div>

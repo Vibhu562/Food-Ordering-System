@@ -85,6 +85,11 @@ export default function Filtere() {
             <option value="asthma">Asthma</option>
             <option value="cancer">Cancer</option>
             <option value="cough">Cough</option>
+            <option value="typhoid">Typhoid</option>
+            <option value="tuberculosis">Tuberculosis</option>
+            <option value="hiv">HIV</option>
+            <option value="hepatisis">Hepatisis</option>
+            <option value="stroke">Stroke</option>
           </select>
         </div>
        

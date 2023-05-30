@@ -66,7 +66,7 @@ export default function Editorderss() {
               type="submit"
               style={{ float: "left" }}
             >
-              Update Order Status
+              Update Otp Order Status
             </button>
           </form>
         </div>

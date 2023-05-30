@@ -47,8 +47,8 @@ export default function Addfood() {
     
     dispatch(addFood(food));
   }
-  function abc (){
-    window.location.href ='/admin'
+  function x (){
+    window.location.href ='/admin/foodslist'
   }
   return (
     <div className="table-responsive-sm mt-2 me-3 ms-2">
@@ -200,6 +200,7 @@ export default function Addfood() {
               className="btn mt-1 btn-primary"
               type="submit"
               style={{ float: "left" }}
+              onClick={x}
             >
               Add Food
             </button>

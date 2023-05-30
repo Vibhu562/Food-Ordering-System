@@ -37,6 +37,7 @@ export default function Foodlist() {
           <th>Name</th>
           <th>CountInStock</th>
           <th>Calories</th>
+          <th>Number of Orders</th>
           <th>Id</th>
           <th>Email</th>
           <th>Actions</th>
@@ -53,6 +54,7 @@ export default function Foodlist() {
                 <td>{food.name}</td>
                 <td>{food.countInStock}</td>
                 <td>{food.calories}</td>
+                <td>{food.num_orders}</td>
                 <td>{food._id}</td>
                 <td>{food.email}</td>
                 <td>

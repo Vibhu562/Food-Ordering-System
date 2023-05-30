@@ -37,9 +37,9 @@ export default function Orderinfo() {
                     <h1>Customer Name : {item.currentUser}</h1>
                     <h1>Customer phonenumber : {item.currentUserphonenumber}</h1>
                     <h1>Customer otp : {item.otp}</h1>
-                    <h1>{item.name}</h1>
+                    <h1>Food Name : {item.name}</h1>
                     <h1>
-                      Quantity : <b>{item.quantity}</b>
+                      Quantity : {item.quantity}
                     </h1>           
                     <hr />
                   </div>

@@ -47,6 +47,7 @@ export default function Editfood() {
           setdisease(food.disease);
           setemail(food.email);
           setplatter(food.platter);
+         
         } else {
           dispatch(getFoodById(id));
         }
@@ -70,11 +71,13 @@ export default function Editfood() {
         countInStock:countInStock,
         category : category,
         disease : disease,
-        
         platter  : platter,
       };
       dispatch(updateFood(id, updatedfood));
      
+    }
+    function x(){
+      window.location.href = "/admin/foodslist"
     }
   return (
     <div className="table-responsive-sm me-4 ms-3 card text-center shadow p-3 mb-5 bg-white rounded">
@@ -153,7 +156,7 @@ export default function Editfood() {
               required
               className="form-control mb-2 mr-sm-2"
               placeholder="Number of orders of Particular food item"
-              value={food.num_orders}
+              value={num_orders}
               onChange={(e) => {
                 setnum_orders(e.target.value);
               }}
@@ -222,6 +225,7 @@ export default function Editfood() {
               className="btn mt-5 mb-n2 btn-primary"
               type="submit"
               style={{ float: "left" }}
+              onClick={x}
             >
               Edit Food
             </button>

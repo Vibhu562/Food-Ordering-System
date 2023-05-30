@@ -9,9 +9,10 @@ df1.columns = ['Restaurant', 'food_id', 'title', 'canteen_id', 'price',
 
 # mean of average ratings of all items
 C = df1['avg_rating'].mean()
-
+print(C)
 # the minimum number of votes required to appear in recommendation list, i.e, 60th percentile among 'num_rating'
 m = df1['num_rating'].quantile(0.6)
+print(df1['num_rating'])
 # items that qualify the criteria of minimum num of votes
 q_items = df1.copy().loc[df1['num_rating'] >= m]
 
@@ -43,6 +44,7 @@ df2 = pd.read_csv('./data.csv')
 # write DataFrame to JSON file
 top_rated_items[['Restaurant', 'title', 'num_rating', 'avg_rating', 'score']
                 ].to_json('data.json', orient='records')
+
 # read JSON file and write as JavaScript file
 with open('data.json', 'r') as f:
     data = f.read()
