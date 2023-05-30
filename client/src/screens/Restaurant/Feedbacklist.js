@@ -41,6 +41,7 @@ export default function Feedbacklist() {
                 <th>Order ID</th>
                 <th>Feedbacks About</th>
                 <th>Date</th>
+                <th>Time</th>
                 <th>Restaurant Name</th>
                 <th>Delete</th>
                     </tr>
@@ -55,6 +56,7 @@ export default function Feedbacklist() {
                       <td onClick={()=>{window.location.href=`/orderinfo/${feedback.orderid}`}}>{feedback.orderid}</td>
                       <td>{feedback.feedbacks}</td>
                       <td>{feedback.date.substring(0,10)}</td>
+                      <td>{feedback.time}</td>
                       <td>{feedback.restaurantemail} </td>
                       <td>
                     <i

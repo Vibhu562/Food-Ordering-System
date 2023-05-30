@@ -36,11 +36,12 @@ export default function Complaintlist() {
             <table className='table table-striped table-bordered table-responsive '>
                 <thead>
                     <tr>
-                <th>Complaint ID</th>
+               
                 <th>Name</th>
                 <th>Order ID</th>
                 <th>Complaints About</th>
                 <th>Date</th>
+                <th>Time</th>
                 <th>Restaurant Name</th>
                 <th>Response from Restaurant</th>
                 <th>Delete</th>
@@ -52,12 +53,13 @@ export default function Complaintlist() {
                             return (
                                 (currentUser.email == complaint.restaurantemail  ?(
                         <tr > 
-                                <td >{complaint._id}</td>
+                               
                                 <td>{complaint.name}</td>
                       <td onClick={()=>{window.location.href=`/orderinfo/${complaint.orderid}`}}>{complaint.orderid}</td>
                       <td>{complaint.complaints}</td>
                       <td>{complaint.date.substring(0,10)}</td>
-                      <td>{complaint.restaurantemail} </td>
+                      <td>{complaint.time}</td>
+                      <td>{complaint.restaurant} </td>
                       <td>{complaint.complainstatus}</td>
                       <i
                       className="far fa-trash-alt"

@@ -5,6 +5,7 @@ import Loader from '../../components/others/Loader'
 import Error from '../../components/others/Error'
 import Success from '../../components/others/Success'
 import { getComplaintById, getComplaintsByUserId } from "../../actions/complaintAction";
+import { deleteComplaint } from "../../actions/complaintAction";
 export default function Homescreens() {
 
   const complaintstate=useSelector(state=>state.getComplaintsByUserIdReducer)
@@ -29,6 +30,7 @@ export default function Homescreens() {
                 <th>Order ID</th>
                 <th>Complaints About</th> 
                 <th>Response from Restaurant</th>
+                <th>Delete Complaint</th>
               </tr>
             </thead>
             <tbody>
@@ -38,6 +40,10 @@ export default function Homescreens() {
                       <td>{complaint.orderid}</td>
                       <td>{complaint.complaints}</td>
                       <td>{complaint.complainstatus}</td>
+                      <i
+                      className="far fa-trash-alt"
+                      style={{ marginRight: "10px" }} onClick={()=>{dispatch(deleteComplaint(complaint._id))}}
+                    ></i>
                       </tr>
                   }))}
                   {error && (<Error error='something went wrong'/>)}

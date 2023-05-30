@@ -11,7 +11,7 @@ function Csv() {
   return (
     
     <div className="m-4">
-      <h1 className="text-center fs-3">Recommendations</h1>
+      <h1 className="text-center fs-3">Food Recommendation</h1>
       <Table striped bordered hover size="sm">
         <thead>
           <tr>

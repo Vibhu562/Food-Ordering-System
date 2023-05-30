@@ -43,10 +43,10 @@ export default function Tablelist() {
             <th>Email id</th>
             <th>User id Otp</th>
             <th>Phone Number</th>
-            <td>Date</td>
-            <td>Time</td>
-            <td>Members Count</td>
-            <td>Delete</td>
+            <th>Date</th>
+            <th>Time</th>
+            <th>Members Count</th>
+            <th>Delete</th>
             <th>Edit</th>
           </tr>
         </thead>
